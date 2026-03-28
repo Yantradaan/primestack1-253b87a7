@@ -8,7 +8,9 @@ export const services = [
     image: "/src/assets/services/health-cloud.jpg",
     short: "Revolutionize patient care with connected health experiences.",
     description: "Salesforce Health Cloud empowers healthcare organizations to deliver personalized patient experiences. We help you implement patient management, care coordination, and clinical data integration to transform how you deliver care.",
+    longDescription: "At PrimeStack Solutions, we specialize in deploying Salesforce Health Cloud to create unified patient experiences that drive better outcomes. Our certified consultants work with hospitals, clinics, and healthcare networks to build comprehensive Patient 360 views, automate care plans, and ensure seamless interoperability with existing EHR systems. From HIPAA-compliant data architecture to real-time telehealth integrations, we ensure your organization is equipped to deliver modern, patient-centric care at scale.",
     features: ["Patient 360 View", "Care Plan Management", "Clinical Data Integration", "HIPAA Compliance", "Telehealth Integration", "Care Team Collaboration"],
+    benefits: ["40% improvement in patient satisfaction scores", "Reduced administrative overhead by 35%", "Seamless EHR integration with existing systems", "Real-time care coordination across teams"],
   },
   {
     slug: "sales-cloud",
@@ -17,7 +19,9 @@ export const services = [
     image: "/src/assets/services/sales-cloud.jpg",
     short: "Accelerate revenue growth with intelligent sales automation.",
     description: "Maximize your sales potential with Salesforce Sales Cloud. Our consultants design and implement solutions for lead management, opportunity tracking, forecasting, and sales analytics that drive measurable results.",
+    longDescription: "PrimeStack's Sales Cloud implementations are designed to supercharge your revenue engine. We configure intelligent lead scoring, build custom opportunity pipelines, and deploy advanced forecasting models that give your sales leadership real-time visibility into performance. Our team integrates CPQ solutions for complex quoting workflows and implements territory management strategies that maximize coverage. Whether you're a startup scaling your first sales team or an enterprise optimizing a global salesforce, we deliver measurable ROI within 90 days.",
     features: ["Lead & Opportunity Management", "Sales Forecasting", "Pipeline Analytics", "CPQ Integration", "Territory Management", "Mobile Sales"],
+    benefits: ["300% increase in pipeline visibility", "50% faster quote-to-cash cycle", "Accurate revenue forecasting with AI insights", "Mobile-first selling for field teams"],
   },
   {
     slug: "service-cloud",
@@ -26,7 +30,9 @@ export const services = [
     image: "/src/assets/services/service-cloud.jpg",
     short: "Deliver exceptional customer service across every channel.",
     description: "Transform your customer service with Salesforce Service Cloud. We implement omnichannel support, case management, knowledge bases, and AI-powered service solutions that boost customer satisfaction.",
+    longDescription: "PrimeStack builds world-class customer service operations on Salesforce Service Cloud. We design omnichannel routing strategies that ensure customers reach the right agent on the right channel — whether it's phone, email, chat, social media, or self-service portals. Our implementations include intelligent case management with automated escalation rules, comprehensive knowledge bases powered by AI search, and Einstein-powered chatbots that resolve common issues instantly. We also deploy Field Service Lightning for organizations with mobile workforces.",
     features: ["Omnichannel Routing", "Case Management", "Knowledge Base", "AI-Powered Chatbots", "Field Service", "Customer Self-Service"],
+    benefits: ["60% reduction in average case resolution time", "First-contact resolution rates above 80%", "24/7 support via AI chatbots", "Unified agent console for all channels"],
   },
   {
     slug: "education-cloud",
@@ -35,7 +41,9 @@ export const services = [
     image: "/src/assets/services/education-cloud.jpg",
     short: "Connect the entire student lifecycle on one platform.",
     description: "Salesforce Education Cloud helps institutions manage the complete student lifecycle. From recruitment and admissions to alumni engagement, we implement solutions that improve student success and institutional outcomes.",
+    longDescription: "PrimeStack partners with universities, colleges, and K-12 institutions to deploy Salesforce Education Cloud solutions that connect every touchpoint of the student journey. We build recruitment portals that increase application volume, implement admissions workflows that reduce processing time, and create Student Success Hubs that proactively identify at-risk students. Our alumni engagement and fundraising solutions help institutions build lasting relationships that drive donations and mentorship programs.",
     features: ["Student Recruitment", "Admissions Management", "Student Success Hub", "Alumni Engagement", "Fundraising & Advancement", "Academic Operations"],
+    benefits: ["25% increase in enrollment year-over-year", "Proactive student retention with predictive analytics", "Streamlined admissions processing", "Enhanced alumni engagement and fundraising"],
   },
   {
     slug: "financial-cloud",
@@ -44,7 +52,9 @@ export const services = [
     image: "/src/assets/services/financial-cloud.jpg",
     short: "Build trusted relationships with intelligent financial solutions.",
     description: "Salesforce Financial Services Cloud enables banks, wealth management firms, and insurance companies to deliver personalized financial experiences. We help you implement client management, financial goal tracking, and compliance solutions.",
+    longDescription: "PrimeStack's Financial Services Cloud implementations empower wealth managers, bankers, and insurance advisors with a complete Client 360 view that drives deeper relationships and better outcomes. We configure financial goal tracking, implement compliance-ready workflows with audit trails, and build automated document management systems. Our solutions connect front-office advisory tools with back-office operations, creating seamless experiences for both advisors and clients. We ensure regulatory compliance across jurisdictions while maximizing advisor productivity.",
     features: ["Client 360 View", "Financial Goal Planning", "Compliance Management", "Wealth Management", "Insurance Policy Admin", "Banking Operations"],
+    benefits: ["2x advisor productivity improvement", "Complete client 360 visibility", "Regulatory compliance automation", "Personalized financial planning at scale"],
   },
   {
     slug: "qa-automation",
@@ -53,7 +63,9 @@ export const services = [
     image: "/src/assets/services/qa-automation.jpg",
     short: "Ensure quality with automated testing for Salesforce implementations.",
     description: "Our QA Automation services ensure your Salesforce implementations are robust and reliable. We build comprehensive test suites, automated regression testing, and CI/CD pipelines that maintain quality at speed.",
+    longDescription: "Quality is non-negotiable in enterprise Salesforce deployments, and PrimeStack's QA Automation practice ensures every release meets the highest standards. We build comprehensive automated test suites covering unit tests, integration tests, and end-to-end scenarios using industry-leading frameworks. Our CI/CD pipeline configurations enable continuous testing with every deployment, catching issues before they reach production. We also specialize in data migration testing, performance load testing, and UAT facilitation to ensure smooth go-lives.",
     features: ["Automated Test Suites", "Regression Testing", "CI/CD Pipeline Setup", "Performance Testing", "Data Migration Testing", "UAT Support"],
+    benefits: ["Regression testing reduced from 3 days to 4 hours", "99.9% deployment success rate", "Continuous quality monitoring", "Faster release cycles with confidence"],
   },
   {
     slug: "consumer-goods-cloud",
@@ -62,7 +74,9 @@ export const services = [
     image: "/src/assets/services/consumer-goods-cloud.jpg",
     short: "Optimize retail execution and drive field team productivity.",
     description: "Salesforce Consumer Goods Cloud helps brands optimize retail execution, manage trade promotions, and empower field teams. We implement solutions that give you real-time visibility into store performance.",
+    longDescription: "PrimeStack helps consumer goods brands transform their retail execution with Salesforce Consumer Goods Cloud. We implement intelligent store visit planning that maximizes field rep coverage, build planogram compliance tools with image recognition, and deploy trade promotion management solutions that optimize spend ROI. Our implementations provide real-time analytics dashboards that give leadership visibility into store-level performance, helping brands make data-driven decisions about product placement, promotions, and territory strategies.",
     features: ["Retail Execution", "Trade Promotion Management", "Field Team Optimization", "Store Visit Planning", "Planogram Compliance", "Real-time Analytics"],
+    benefits: ["60% jump in field team productivity", "Real-time store performance visibility", "Optimized trade promotion ROI", "Data-driven retail execution strategies"],
   },
   {
     slug: "omnistudio",
@@ -71,7 +85,9 @@ export const services = [
     image: "/src/assets/services/omnistudio.jpg",
     short: "Build guided experiences with low-code digital engagement tools.",
     description: "Salesforce OmniStudio enables you to build dynamic, guided digital experiences without complex code. We help you implement FlexCards, OmniScripts, and DataRaptors that streamline customer and agent interactions.",
+    longDescription: "PrimeStack leverages Salesforce OmniStudio to create industry-specific guided digital experiences that dramatically improve user engagement. We design and build FlexCards that present contextual information at a glance, implement OmniScripts that guide agents and customers through complex processes step by step, and configure DataRaptors and Integration Procedures for seamless data orchestration. Our low-code approach means faster time to value, easier maintenance, and the agility to adapt experiences as business needs evolve.",
     features: ["FlexCards", "OmniScripts", "DataRaptors", "Integration Procedures", "Decision Matrices", "Document Generation"],
+    benefits: ["70% faster development with low-code tools", "Guided experiences reduce errors by 45%", "Seamless data integration across systems", "Rapid iteration on customer journeys"],
   },
   {
     slug: "agentic-ai",
@@ -80,6 +96,8 @@ export const services = [
     image: "/src/assets/services/agentic-ai.jpg",
     short: "Deploy autonomous AI agents that reason, plan, and act on your behalf.",
     description: "Harness the power of Agentic AI within your Salesforce ecosystem. We design and implement autonomous AI agents using Salesforce Einstein, Agentforce, and custom LLM integrations that can reason through complex workflows, make decisions, and take actions — transforming how your teams operate.",
+    longDescription: "PrimeStack is at the forefront of the Agentic AI revolution within the Salesforce ecosystem. We design, build, and deploy autonomous AI agents using Agentforce, Einstein Copilot, and custom LLM integrations that go beyond simple chatbots — these agents can reason through complex business logic, make contextual decisions, and execute multi-step workflows autonomously. From automating customer service escalations to generating personalized sales outreach, our Agentic AI solutions free your teams to focus on high-value strategic work while AI handles the rest.",
     features: ["Agentforce Implementation", "Einstein AI Copilot", "Autonomous Workflow Agents", "Natural Language Automation", "Predictive Analytics", "AI-Powered Decision Making"],
+    benefits: ["80% reduction in manual workflow processing", "AI agents that learn and improve over time", "Natural language interfaces for complex operations", "24/7 autonomous business operations"],
   },
 ];
