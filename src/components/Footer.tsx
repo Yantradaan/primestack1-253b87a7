@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => (
   <footer className="bg-card border-t border-border">
     <div className="container mx-auto px-4 py-16">
       <div className="grid md:grid-cols-4 gap-8">
         <div>
-          <h3 className="font-display text-lg font-bold gradient-text mb-4">CloudPulse</h3>
+          <div className="flex items-center gap-2 mb-4">
+            <img src={logo} alt="PrimeStack Solutions" className="h-8 w-auto" />
+            <h3 className="font-display text-lg font-bold gradient-text">PrimeStack</h3>
+          </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Your trusted Salesforce consulting partner. We transform businesses through innovative cloud solutions.
+            PrimeStack Solutions Pvt. Ltd. — Your trusted Salesforce consulting partner. Scale without limits.
           </p>
         </div>
         <div>
@@ -37,7 +41,7 @@ export const Footer = () => (
         </div>
       </div>
       <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} CloudPulse. All rights reserved.
+        © {new Date().getFullYear()} PrimeStack Solutions Private Limited. All rights reserved.
       </div>
     </div>
   </footer>

@@ -3,6 +3,7 @@ import { ThemeToggle } from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -19,8 +20,9 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <Link to="/" className="font-display text-xl font-bold gradient-text">
-          CloudPulse
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="PrimeStack Solutions" className="h-9 w-auto" />
+          <span className="font-display text-lg font-bold gradient-text hidden sm:inline">PrimeStack</span>
         </Link>
 
         {/* Desktop */}

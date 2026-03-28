@@ -48,7 +48,7 @@ const Index = () => (
             <span className="gradient-text">Salesforce Cloud</span> Solutions
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-            We help enterprises unlock the full potential of Salesforce with expert consulting, implementation, and managed services across every cloud product.
+            PrimeStack Solutions helps enterprises unlock the full potential of Salesforce with expert consulting, implementation, and managed services across every cloud product. Scale without limits.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="gradient-bg border-0 text-primary-foreground font-semibold px-8">

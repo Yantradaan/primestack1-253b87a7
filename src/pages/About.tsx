@@ -21,12 +21,12 @@ const About = () => (
     <section className="py-24">
       <div className="container mx-auto px-4">
         <AnimatedSection className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">About CloudPulse</span>
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">About PrimeStack Solutions</span>
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-6">
             Your Trusted <span className="gradient-text">Salesforce Partner</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Founded in 2016, CloudPulse has grown from a boutique consultancy to a leading Salesforce implementation partner. We've helped over 200 organizations across healthcare, finance, education, and technology transform their operations with Salesforce.
+            Founded in 2026, PrimeStack Solutions has quickly established itself as a cutting-edge Salesforce implementation partner. We help organizations across healthcare, finance, education, and technology transform their operations with Salesforce. Scale without limits.
           </p>
         </AnimatedSection>
 
