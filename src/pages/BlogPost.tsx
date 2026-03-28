@@ -3,18 +3,40 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { blogs } from "@/data/blogs";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, User } from "lucide-react";
+import { ArrowLeft, Clock, User, Copy, Check } from "lucide-react";
+import { useState } from "react";
 
-const CodeBlock = ({ code, language }: { code: string; language: string }) => (
-  <div className="my-6 rounded-xl overflow-hidden border border-border">
-    <div className="flex items-center justify-between px-4 py-2 bg-muted/80 border-b border-border">
-      <span className="text-xs font-mono text-muted-foreground">{language}</span>
+const CodeBlock = ({ code, language }: { code: string; language: string }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    await navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="my-6 rounded-xl overflow-hidden border border-border group">
+      <div className="flex items-center justify-between px-4 py-2 bg-muted/80 border-b border-border">
+        <span className="text-xs font-mono text-muted-foreground">{language}</span>
+        <button
+          onClick={handleCopy}
+          className="flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+          aria-label="Copy code"
+        >
+          {copied ? (
+            <><Check className="h-3.5 w-3.5 text-green-500" /> Copied!</>
+          ) : (
+            <><Copy className="h-3.5 w-3.5" /> Copy</>
+          )}
+        </button>
+      </div>
+      <pre className="p-4 overflow-x-auto bg-muted/30">
+        <code className="text-sm font-mono text-foreground leading-relaxed">{code}</code>
+      </pre>
     </div>
-    <pre className="p-4 overflow-x-auto bg-muted/30">
-      <code className="text-sm font-mono text-foreground leading-relaxed">{code}</code>
-    </pre>
-  </div>
-);
+  );
+};
 
 const renderContent = (content: string) => {
   const parts = content.split(/(```[\s\S]*?```)/g);
