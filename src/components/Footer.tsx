@@ -8,7 +8,7 @@ export const Footer = () => (
       <div className="grid md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="PrimeStack Solutions" className="h-8 w-auto" />
+            <img src={logo} alt="PrimeStack Solutions" className="h-8 w-auto dark:invert-0 invert" />
             <h3 className="font-display text-lg font-bold gradient-text">PrimeStack</h3>
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
