@@ -28,15 +28,15 @@ export const Footer = () => (
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
             <li><Link to="/blog" className="hover:text-primary transition-colors">Blog</Link></li>
+            <li><Link to="/careers" className="hover:text-primary transition-colors">Careers</Link></li>
             <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
           </ul>
         </div>
         <div>
           <h4 className="font-display font-semibold mb-4">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> hello@cloudpulse.io</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +1 (555) 123-4567</li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> San Francisco, CA</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /><a href="mailto:contact@primestack.in" className="hover:text-primary transition-colors">contact@primestack.in</a></li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> India</li>
           </ul>
         </div>
       </div>

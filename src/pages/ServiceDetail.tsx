@@ -3,7 +3,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { services } from "@/data/services";
 import { useParams, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, ArrowLeft } from "lucide-react";
+import { CheckCircle2, ArrowLeft, TrendingUp } from "lucide-react";
 
 const serviceImages = import.meta.glob("@/assets/services/*.jpg", { eager: true, import: "default" }) as Record<string, string>;
 
@@ -61,8 +61,28 @@ const ServiceDetail = () => {
           <div className="grid lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <AnimatedSection>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-8">{service.description}</p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-4">{service.description}</p>
+                {"longDescription" in service && (
+                  <p className="text-muted-foreground leading-relaxed mb-8">{(service as any).longDescription}</p>
+                )}
               </AnimatedSection>
+
+              {/* Benefits */}
+              {"benefits" in service && (
+                <AnimatedSection delay={0.15} className="mb-10">
+                  <h2 className="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                    <TrendingUp className="h-6 w-6 text-primary" /> Impact & Results
+                  </h2>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {((service as any).benefits as string[]).map((b: string) => (
+                      <div key={b} className="flex items-start gap-3 p-4 glass-card rounded-lg">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm font-medium">{b}</span>
+                      </div>
+                    ))}
+                  </div>
+                </AnimatedSection>
+              )}
 
               <AnimatedSection delay={0.2}>
                 <h2 className="font-display text-2xl font-bold mb-6">Key Features & Capabilities</h2>

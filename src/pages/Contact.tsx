@@ -4,20 +4,30 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { toast } from "sonner";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      toast.success("Message sent! We'll get back to you within 24 hours.");
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const firstName = data.get("firstName") as string;
+    const lastName = data.get("lastName") as string;
+    const email = data.get("email") as string;
+    const company = data.get("company") as string;
+    const message = data.get("message") as string;
+
+    const subject = `Contact from ${firstName} ${lastName} - ${company || "N/A"}`;
+    const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nCompany: ${company || "N/A"}\n\nMessage:\n${message}`;
+
+    window.location.href = `mailto:contact@primestack.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    toast.success("Opening your email client to send the message!");
+    form.reset();
   };
 
   return (
@@ -35,32 +45,32 @@ const Contact = () => {
           <div className="grid lg:grid-cols-3 gap-12 max-w-5xl mx-auto">
             <div className="lg:col-span-2">
               <AnimatedSection>
-                <form onSubmit={handleSubmit} className="glass-card rounded-xl p-8 space-y-6">
+                <form ref={formRef} onSubmit={handleSubmit} className="glass-card rounded-xl p-8 space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium mb-2 block">First Name</label>
-                      <Input required placeholder="John" />
+                      <Input required name="firstName" placeholder="John" />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-2 block">Last Name</label>
-                      <Input required placeholder="Doe" />
+                      <Input required name="lastName" placeholder="Doe" />
                     </div>
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Email</label>
-                    <Input required type="email" placeholder="john@company.com" />
+                    <Input required name="email" type="email" placeholder="john@company.com" />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Company</label>
-                    <Input placeholder="Your Company" />
+                    <Input name="company" placeholder="Your Company" />
                   </div>
                   <div>
                     <label className="text-sm font-medium mb-2 block">Message</label>
-                    <Textarea required rows={5} placeholder="Tell us about your project..." />
+                    <Textarea required name="message" rows={5} placeholder="Tell us about your project..." />
                   </div>
-                  <Button type="submit" disabled={loading} className="w-full gradient-bg border-0 text-primary-foreground font-semibold">
+                  <Button type="submit" className="w-full gradient-bg border-0 text-primary-foreground font-semibold">
                     <Send className="h-4 w-4 mr-2" />
-                    {loading ? "Sending..." : "Send Message"}
+                    Send Message
                   </Button>
                 </form>
               </AnimatedSection>
@@ -68,9 +78,9 @@ const Contact = () => {
 
             <div className="space-y-6">
               {[
-                { icon: Mail, title: "Email", value: "hello@cloudpulse.io" },
-                { icon: Phone, title: "Phone", value: "+1 (555) 123-4567" },
-                { icon: MapPin, title: "Office", value: "123 Market St, Suite 400\nSan Francisco, CA 94105" },
+                { icon: Mail, title: "Email", value: "contact@primestack.in", href: "mailto:contact@primestack.in" },
+                { icon: Phone, title: "Phone", value: "+91 (XXX) XXX-XXXX" },
+                { icon: MapPin, title: "Office", value: "India" },
               ].map((c, i) => (
                 <AnimatedSection key={c.title} delay={i * 0.1}>
                   <div className="glass-card rounded-xl p-6">
@@ -78,7 +88,11 @@ const Contact = () => {
                       <c.icon className="h-5 w-5 text-primary-foreground" />
                     </div>
                     <h3 className="font-display font-semibold mb-1">{c.title}</h3>
-                    <p className="text-sm text-muted-foreground whitespace-pre-line">{c.value}</p>
+                    {c.href ? (
+                      <a href={c.href} className="text-sm text-primary hover:underline">{c.value}</a>
+                    ) : (
+                      <p className="text-sm text-muted-foreground whitespace-pre-line">{c.value}</p>
+                    )}
                   </div>
                 </AnimatedSection>
               ))}
