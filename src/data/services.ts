@@ -1,0 +1,68 @@
+import { Heart, TrendingUp, Headphones, GraduationCap, Landmark, TestTube, ShoppingCart, Layers } from "lucide-react";
+
+export const services = [
+  {
+    slug: "health-cloud",
+    title: "Health Cloud",
+    icon: Heart,
+    short: "Revolutionize patient care with connected health experiences.",
+    description: "Salesforce Health Cloud empowers healthcare organizations to deliver personalized patient experiences. We help you implement patient management, care coordination, and clinical data integration to transform how you deliver care.",
+    features: ["Patient 360 View", "Care Plan Management", "Clinical Data Integration", "HIPAA Compliance", "Telehealth Integration", "Care Team Collaboration"],
+  },
+  {
+    slug: "sales-cloud",
+    title: "Sales Cloud",
+    icon: TrendingUp,
+    short: "Accelerate revenue growth with intelligent sales automation.",
+    description: "Maximize your sales potential with Salesforce Sales Cloud. Our consultants design and implement solutions for lead management, opportunity tracking, forecasting, and sales analytics that drive measurable results.",
+    features: ["Lead & Opportunity Management", "Sales Forecasting", "Pipeline Analytics", "CPQ Integration", "Territory Management", "Mobile Sales"],
+  },
+  {
+    slug: "service-cloud",
+    title: "Service Cloud",
+    icon: Headphones,
+    short: "Deliver exceptional customer service across every channel.",
+    description: "Transform your customer service with Salesforce Service Cloud. We implement omnichannel support, case management, knowledge bases, and AI-powered service solutions that boost customer satisfaction.",
+    features: ["Omnichannel Routing", "Case Management", "Knowledge Base", "AI-Powered Chatbots", "Field Service", "Customer Self-Service"],
+  },
+  {
+    slug: "education-cloud",
+    title: "Education Cloud",
+    icon: GraduationCap,
+    short: "Connect the entire student lifecycle on one platform.",
+    description: "Salesforce Education Cloud helps institutions manage the complete student lifecycle. From recruitment and admissions to alumni engagement, we implement solutions that improve student success and institutional outcomes.",
+    features: ["Student Recruitment", "Admissions Management", "Student Success Hub", "Alumni Engagement", "Fundraising & Advancement", "Academic Operations"],
+  },
+  {
+    slug: "financial-cloud",
+    title: "Financial Services Cloud",
+    icon: Landmark,
+    short: "Build trusted relationships with intelligent financial solutions.",
+    description: "Salesforce Financial Services Cloud enables banks, wealth management firms, and insurance companies to deliver personalized financial experiences. We help you implement client management, financial goal tracking, and compliance solutions.",
+    features: ["Client 360 View", "Financial Goal Planning", "Compliance Management", "Wealth Management", "Insurance Policy Admin", "Banking Operations"],
+  },
+  {
+    slug: "qa-automation",
+    title: "QA Automation",
+    icon: TestTube,
+    short: "Ensure quality with automated testing for Salesforce implementations.",
+    description: "Our QA Automation services ensure your Salesforce implementations are robust and reliable. We build comprehensive test suites, automated regression testing, and CI/CD pipelines that maintain quality at speed.",
+    features: ["Automated Test Suites", "Regression Testing", "CI/CD Pipeline Setup", "Performance Testing", "Data Migration Testing", "UAT Support"],
+  },
+  {
+    slug: "consumer-goods-cloud",
+    title: "Consumer Goods Cloud",
+    icon: ShoppingCart,
+    short: "Optimize retail execution and drive field team productivity.",
+    description: "Salesforce Consumer Goods Cloud helps brands optimize retail execution, manage trade promotions, and empower field teams. We implement solutions that give you real-time visibility into store performance.",
+    features: ["Retail Execution", "Trade Promotion Management", "Field Team Optimization", "Store Visit Planning", "Planogram Compliance", "Real-time Analytics"],
+  },
+  {
+    slug: "omnistudio",
+    title: "OmniStudio",
+    icon: Layers,
+    short: "Build guided experiences with low-code digital engagement tools.",
+    description: "Salesforce OmniStudio enables you to build dynamic, guided digital experiences without complex code. We help you implement FlexCards, OmniScripts, and DataRaptors that streamline customer and agent interactions.",
+    features: ["FlexCards", "OmniScripts", "DataRaptors", "Integration Procedures", "Decision Matrices", "Document Generation"],
+  },
+];
