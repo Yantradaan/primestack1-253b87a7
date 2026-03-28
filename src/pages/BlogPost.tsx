@@ -25,7 +25,7 @@ const CodeBlock = ({ code, language }: { code: string; language: string }) => {
           aria-label="Copy code"
         >
           {copied ? (
-            <><Check className="h-3.5 w-3.5 text-green-500" /> Copied!</>
+            <><Check className="h-3.5 w-3.5 text-primary" /> Copied!</>
           ) : (
             <><Copy className="h-3.5 w-3.5" /> Copy</>
           )}
