@@ -7,6 +7,7 @@ import { testimonials } from "@/data/testimonials";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, CheckCircle2, Users, Award, Clock, ChevronLeft, ChevronRight } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { CertificationsCarousel } from "@/components/CertificationsCarousel";
 import { useState, useEffect, useCallback } from "react";
 
 const stats = [
@@ -165,6 +166,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Certifications */}
+      <CertificationsCarousel />
 
       {/* Services */}
       <section className="py-24">
