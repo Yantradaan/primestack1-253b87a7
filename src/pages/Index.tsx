@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, CheckCircle2, Users, Award, Clock, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, Users, Award, Clock, ChevronLeft, ChevronRight, Cloud, Bot, Code, Database, Settings, Headphones } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { CertificationsCarousel } from "@/components/CertificationsCarousel";
 import { useState, useEffect, useCallback } from "react";
@@ -195,25 +195,37 @@ const Index = () => {
             </motion.div>
           </div>
 
-          {/* Floating tech icons on right side */}
+          {/* Floating service icons on right side */}
           <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px]">
-            {[...Array(6)].map((_, i) => {
-              const angle = (i / 6) * Math.PI * 2;
+            {[
+              { icon: Cloud, label: "Salesforce Cloud" },
+              { icon: Bot, label: "Agentic AI" },
+              { icon: Code, label: "Development" },
+              { icon: Database, label: "Data Cloud" },
+              { icon: Settings, label: "Implementation" },
+              { icon: Headphones, label: "Managed Services" },
+            ].map((item, i) => {
+              const angle = (i / 6) * Math.PI * 2 - Math.PI / 2;
               const radius = 150;
               const x = Math.cos(angle) * radius + 200;
               const y = Math.sin(angle) * radius + 200;
+              const Icon = item.icon;
               return (
                 <motion.div
                   key={i}
-                  className="absolute w-12 h-12 rounded-xl border border-primary/10 bg-background/50 backdrop-blur-md flex items-center justify-center shadow-lg"
-                  style={{ left: x, top: y }}
+                  className="absolute w-14 h-14 rounded-xl border border-primary/15 bg-background/60 backdrop-blur-md flex items-center justify-center shadow-lg group cursor-default"
+                  style={{ left: x - 7, top: y - 7 }}
                   animate={{
                     y: [0, -10, 0],
                     rotate: [0, 5, -5, 0],
                   }}
                   transition={{ duration: 4 + i, repeat: Infinity, delay: i * 0.5 }}
+                  whileHover={{ scale: 1.2 }}
                 >
-                  <div className="w-4 h-4 rounded-full bg-primary/20" />
+                  <Icon className="w-5 h-5 text-primary" />
+                  <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 text-[10px] text-muted-foreground whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+                    {item.label}
+                  </span>
                 </motion.div>
               );
             })}
