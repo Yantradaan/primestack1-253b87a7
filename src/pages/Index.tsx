@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
+import { caseStudies } from "@/data/caseStudies";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, CheckCircle2, Users, Award, Clock, ChevronLeft, ChevronRight, Cloud, Bot, Code, Database, Settings, Headphones } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
