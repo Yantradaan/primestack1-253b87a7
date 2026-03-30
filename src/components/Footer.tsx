@@ -8,11 +8,10 @@ export const Footer = () => (
       <div className="grid md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <img src={logo} alt="PrimeStack Solutions" className="h-8 w-auto dark:invert-0 invert" />
-            <h3 className="font-display text-lg font-bold gradient-text">PrimeStack</h3>
+            <img src={logo} alt="PrimeStack Solutions" className="h-14 w-auto dark:invert-0 invert" />
           </div>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            PrimeStack Solutions Pvt. Ltd. — Your trusted Salesforce consulting partner. Scale without limits.
+            PrimeStack Solutions Pvt. Ltd. - Your trusted Salesforce consulting partner. Scale without limits.
           </p>
         </div>
         <div>
@@ -36,7 +35,8 @@ export const Footer = () => (
           <h4 className="font-display font-semibold mb-4">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /><a href="mailto:contact@primestack.in" className="hover:text-primary transition-colors">contact@primestack.in</a></li>
-            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> India</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91-8744823411, +1-(480)-953-2817</li>
+            <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> IHDP BUsiness Park, Noida (UP), India</li>
           </ul>
         </div>
       </div>

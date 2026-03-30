@@ -11,9 +11,9 @@ import { CertificationsCarousel } from "@/components/CertificationsCarousel";
 import { useState, useEffect, useCallback } from "react";
 
 const stats = [
-  { icon: Users, value: "200+", label: "Clients Served" },
-  { icon: Award, value: "500+", label: "Projects Delivered" },
-  { icon: Clock, value: "10+", label: "Years Experience" },
+  { icon: Users, value: "10+", label: "Clients Served" },
+  { icon: Award, value: "5+", label: "Projects Delivered" },
+  { icon: Clock, value: "12+", label: "Years Experience" },
   { icon: CheckCircle2, value: "99%", label: "Client Satisfaction" },
 ];
 

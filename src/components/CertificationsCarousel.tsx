@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./AnimatedSection";
 
-import sfAdmin from "@/assets/certs/sf-admin.png";
-import sfDeveloper from "@/assets/certs/sf-developer.png";
-import sfSalesConsultant from "@/assets/certs/sf-sales-consultant.png";
-import sfServiceConsultant from "@/assets/certs/sf-service-consultant.png";
-import sfMarketing from "@/assets/certs/sf-marketing.png";
-import sfArchitect from "@/assets/certs/sf-architect.png";
-import sfDataCloud from "@/assets/certs/sf-data-cloud.png";
-import sfOmniStudio from "@/assets/certs/sf-omnistudio.png";
+import sfadAdmin from "@/assets/certs/Advanced-Administrator.png";
+import sfpd1 from "@/assets/certs/Platform-Developer-I.png";
+import sfpd2 from "@/assets/certs/Salesforce-Platform-Developer-II-badge-Salesforce.png";
+import sfsales from "@/assets/certs/Sales-Cloud-Consultant.png";
+import sfservice from "@/assets/certs/Service-Cloud-Consultant.png";
+import sfExpCloud from "@/assets/certs/Experience-Cloud-Consultant.png";
+import sfOmniStudio from "@/assets/certs/OmniStudio-Developer.png";
+import sfagentforce from "@/assets/certs/2025-02_Badge_SF-Certified_Agentforce-Specialist_High-Res.png";
 
 const certifications = [
-  { name: "Salesforce Administrator", image: sfAdmin },
-  { name: "Platform Developer", image: sfDeveloper },
-  { name: "Sales Cloud Consultant", image: sfSalesConsultant },
-  { name: "Service Cloud Consultant", image: sfServiceConsultant },
-  { name: "Marketing Cloud", image: sfMarketing },
-  { name: "Solution Architect", image: sfArchitect },
-  { name: "Data Cloud", image: sfDataCloud },
+  { name: "Advanced Administrator", image: sfadAdmin },
+  { name: "Platform Dev 1", image: sfpd1 },
+  { name: "Platform Dev 2", image: sfpd2 },
+  { name: "Sales Cloud Consultant", image: sfsales },
+  { name: "Service Cloud Consultant", image: sfservice },
+  { name: "Experience Cloud", image: sfExpCloud },
   { name: "OmniStudio Developer", image: sfOmniStudio },
+  { name: "Agentforce Specialist", image: sfagentforce },
 ];
 
 // Double the items for seamless infinite scroll

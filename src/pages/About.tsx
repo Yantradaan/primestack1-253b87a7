@@ -10,10 +10,10 @@ const values = [
 ];
 
 const team = [
-  { name: "Alexandra Rivera", role: "CEO & Founder", bio: "15+ years of Salesforce ecosystem experience. Former Salesforce MVB." },
-  { name: "David Kim", role: "CTO", bio: "Architect of 100+ enterprise Salesforce implementations across industries." },
+  { name: "Sourabh Goyal", role: "CEO & Founder", bio: "12+ years of Salesforce ecosystem experience." },
+  { name: "Vishal Dixit", role: "Head of Quality Assurance & Testing", bio: "6+ years of expertise in Q&A" }/*,
   { name: "Sarah Chen", role: "VP of Consulting", bio: "Health Cloud & Financial Cloud specialist with deep domain expertise." },
-  { name: "James Park", role: "Head of Engineering", bio: "Leads our QA automation and DevOps practices for Salesforce delivery." },
+  { name: "James Park", role: "Head of Engineering", bio: "Leads our QA automation and DevOps practices for Salesforce delivery." },*/
 ];
 
 const About = () => (
@@ -26,7 +26,7 @@ const About = () => (
             Your Trusted <span className="gradient-text">Salesforce Partner</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Founded in 2026, PrimeStack Solutions has quickly established itself as a cutting-edge Salesforce implementation partner. We help organizations across healthcare, finance, education, and technology transform their operations with Salesforce. Scale without limits.
+            Founded in 2026, PrimeStack Solutions has quickly established itself as a cutting-edge Salesforce implementation partner. We help organizations across healthcare, finance, education, and technology transform their operations with Salesforce.
           </p>
         </AnimatedSection>
 
@@ -47,10 +47,10 @@ const About = () => (
 
         {/* Team */}
         <AnimatedSection className="text-center mb-12">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Our Leadership Team</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">Our Expertise Team</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">Certified Salesforce experts with decades of combined experience.</p>
         </AnimatedSection>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 ">
           {team.map((t, i) => (
             <AnimatedSection key={t.name} delay={i * 0.1}>
               <div className="glass-card rounded-xl p-6 text-center h-full">

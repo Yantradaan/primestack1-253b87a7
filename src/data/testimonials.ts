@@ -1,22 +1,22 @@
 export const testimonials = [
   {
-    name: "Dr. Emily Watson",
-    role: "CTO, MedConnect Health",
-    quote: "CloudPulse transformed our patient management system with Health Cloud. Patient satisfaction scores increased by 40% within six months.",
-    avatar: "EW",
+    name: "Ravindar Kothapally",
+    role: "CEO, RKIT Labs",
+    quote: "Working with the team on our Salesforce Financial Services Cloud implementation was a fantastic decision. They truly understood our business and delivered a tailored solution. Now we have a clear 360° client view, smoother processes, and more confident advisors. The impact has been immediate.",
+    avatar: "RK",
   },
   {
-    name: "Michael Torres",
-    role: "VP Sales, TechFlow Inc.",
-    quote: "Our Sales Cloud implementation by CloudPulse boosted our pipeline visibility by 300%. The team's expertise is unmatched.",
-    avatar: "MT",
+    name: "Dan Halpin",
+    role: "Delivery Lead, Disney+",
+    quote: "Implementing Salesforce Service Cloud with the team was a game-changer for Disney. They understood our commitment to exceptional guest experiences and delivered a solution tailored to our needs. Our support operations are now more streamlined, our teams are more efficient, and we have a unified view of every guest interaction.",
+    avatar: "DH",
   },
   {
-    name: "Lisa Nakamura",
-    role: "Director of IT, EduVerse",
-    quote: "The Education Cloud solution CloudPulse built for us connected our entire student lifecycle. Enrollment is up 25% year-over-year.",
-    avatar: "LN",
-  },
+    name: "Manish Batra",
+    role: "CEO, Cypher IT Solutions",
+    quote: "Partnering with the team for our Salesforce Sales Cloud implementation and web app development was a great decision. They understood our goals and delivered a solution tailored to our needs. Our sales processes are now more efficient, and the web app has improved both team productivity and customer experience.",
+    avatar: "MB",
+  }/*,
   {
     name: "Robert Chang",
     role: "COO, FinServe Capital",
@@ -34,5 +34,5 @@ export const testimonials = [
     role: "Head of Retail, BrightGoods",
     quote: "Consumer Goods Cloud implementation was seamless. Our field team productivity jumped 60% in the first quarter.",
     avatar: "CM",
-  },
+  },*/
 ];
