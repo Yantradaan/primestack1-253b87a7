@@ -78,6 +78,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "refugee-program-portal-accessibility",
+    image: refugeeImg,
     title: "Refugee Program Portal — Accessibility",
     subtitle: "Inclusive & Accessible Program Selection on Salesforce Experience Cloud",
     client: "Humanitarian Services — Refugee Assistance Program",

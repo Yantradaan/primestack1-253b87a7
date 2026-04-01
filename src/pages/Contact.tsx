@@ -85,8 +85,8 @@ const Contact = () => {
               ].map((c, i) => (
                 <AnimatedSection key={c.title} delay={i * 0.1}>
                   <div className="glass-card rounded-xl p-6">
-                    <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center mb-3">
-                      <c.icon className="h-5 w-5 text-primary-foreground" />
+                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center mb-3 ${(c as any).iconColor ? 'bg-green-500/10' : 'gradient-bg'}`}>
+                      <c.icon className={`h-5 w-5 ${(c as any).iconColor || 'text-primary-foreground'}`} />
                     </div>
                     <h3 className="font-display font-semibold mb-1">{c.title}</h3>
                     {c.href ? (
