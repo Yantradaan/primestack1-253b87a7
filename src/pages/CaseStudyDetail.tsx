@@ -25,8 +25,8 @@ const CaseStudyDetail = () => {
     <Layout>
       {/* Hero */}
       <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 gradient-bg opacity-90" />
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE4YzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02em0wLTEyYzMuMzE0IDAgNiAyLjY4NiA2IDZzLTIuNjg2IDYtNiA2LTYtMi42ODYtNi02IDIuNjg2LTYgNi02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-20" />
+        <img src={cs.image} alt={cs.title} className="absolute inset-0 w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="container mx-auto px-4 relative z-10">
           <Link
             to="/case-studies"
