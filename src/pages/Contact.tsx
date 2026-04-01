@@ -3,7 +3,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
 import { useState, useRef } from "react";
 import { toast } from "sonner";
 
@@ -79,13 +79,14 @@ const Contact = () => {
             <div className="space-y-6">
               {[
                 { icon: Mail, title: "Email", value: "contact@primestack.in", href: "mailto:contact@primestack.in" },
-                { icon: Phone, title: "Phone", value: "+91-8744823411" },
-                { icon: MapPin, title: "Office", value: "IHDP BUsiness Park, Noida (UP), India" },
+                { icon: Phone, title: "Phone (India)", value: "+91-8744823411" },
+                { icon: MessageCircle, title: "WhatsApp (US)", value: "+1-(480)-953-2817", href: "https://wa.me/14809532817", iconColor: "text-green-500" },
+                { icon: MapPin, title: "Office", value: "IHDP Business Park, Noida (UP), India" },
               ].map((c, i) => (
                 <AnimatedSection key={c.title} delay={i * 0.1}>
                   <div className="glass-card rounded-xl p-6">
-                    <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center mb-3">
-                      <c.icon className="h-5 w-5 text-primary-foreground" />
+                    <div className={`w-10 h-10 rounded-lg flex items-center justify-center mb-3 ${(c as any).iconColor ? 'bg-green-500/10' : 'gradient-bg'}`}>
+                      <c.icon className={`h-5 w-5 ${(c as any).iconColor || 'text-primary-foreground'}`} />
                     </div>
                     <h3 className="font-display font-semibold mb-1">{c.title}</h3>
                     {c.href ? (

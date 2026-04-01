@@ -8,6 +8,7 @@ export interface CaseStudy {
   focus: string;
   year: string;
   excerpt: string;
+  image: string;
   sections: {
     title: string;
     content: string;
@@ -16,9 +17,13 @@ export interface CaseStudy {
   }[];
 }
 
+import sharepointImg from "@/assets/case-study-sharepoint.jpg";
+import refugeeImg from "@/assets/case-study-refugee.jpg";
+
 export const caseStudies: CaseStudy[] = [
   {
     slug: "sharepoint-salesforce-content-integration",
+    image: sharepointImg,
     title: "SharePoint & Salesforce Content Integration",
     subtitle: "Secure Enterprise Content Delivery via Experience Cloud",
     client: "Enterprise Client",
@@ -73,6 +78,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "refugee-program-portal-accessibility",
+    image: refugeeImg,
     title: "Refugee Program Portal — Accessibility",
     subtitle: "Inclusive & Accessible Program Selection on Salesforce Experience Cloud",
     client: "Humanitarian Services — Refugee Assistance Program",
